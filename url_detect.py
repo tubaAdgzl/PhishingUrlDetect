@@ -34,6 +34,7 @@ model=randomf.fit(x_train,y_train)
 if btn:
     skor=model.score(x_test,y_test)
     sonuc=model.predict([tahmin])
+    st.text("kontrol ediliyor...")
     if 'guvenli' in sonuc:
         st.toast('kontrol ediliyor...')
         time.sleep(.5)
