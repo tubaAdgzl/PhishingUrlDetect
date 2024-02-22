@@ -1,4 +1,4 @@
-## Zararlı Bağlantı Tespiti
+# Zararlı Bağlantı Tespiti
 
 Uygulama makine öğrenmesi  kullanarak zararlı olabilecek bağlantıları tespit eder.
 ### Kullanım
