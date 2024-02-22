@@ -9,7 +9,7 @@ st.header("Zararlı Bağlantı Tespiti")
 
 url=st.text_input("Url girin (örnek: google.com)")
 with st.spinner('bu işlem biraz zaman alabilir...'):
-    time.sleep(5)
+    time.sleep(7)
 btn=st.button("Bağlantıyı kontrol et")
 
 df=pd.read_csv("url_list.csv")
