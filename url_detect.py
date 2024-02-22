@@ -8,6 +8,8 @@ import time
 st.header("Zararlı Bağlantı Tespiti")
 
 url=st.text_input("Url girin (örnek: google.com)")
+with st.spinner('bu işlem biraz zaman alabilir...'):
+    time.sleep(5)
 btn=st.button("Bağlantıyı kontrol et")
 
 df=pd.read_csv("url_list.csv")
@@ -34,7 +36,6 @@ model=randomf.fit(x_train,y_train)
 if btn:
     skor=model.score(x_test,y_test)
     sonuc=model.predict([tahmin])
-    st.text("kontrol ediliyor...")
     if 'guvenli' in sonuc:
         st.toast('kontrol ediliyor...')
         time.sleep(.5)
